@@ -2,8 +2,8 @@
 This repo is created for Chainalysis Take At Home Test
 
 Clarifications:
-        input: int[][] => contains 0,1 => 0: sea 1: land
-        output: int => number of islands that are connected with 8-directions.
+        - input: int[][] => contains 0,1 => 0: sea 1: land
+        - output: int => number of islands that are connected with 8-directions.
 
         - Empty input => return 0.
         - All 1's => return 1
