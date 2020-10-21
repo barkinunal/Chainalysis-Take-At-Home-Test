@@ -12,6 +12,10 @@ Clarifications:
         - Borders are water.
         - There can't be any value other than 0 or 1.
         - Can I modify the input => Yes.
+        
+    Assumptions: 
+    - I can modify the input. (If this is not wanted, I could use a visited matrix, 
+    this would make the space complexity O(n*m) n: number of rows, m: number of columns)
 
     Example:
 
@@ -28,8 +32,8 @@ Clarifications:
         - The matrix actually represents a graph, values are nodes, there are undirected edges between the nodes at 8-directions
         - What question asks is to finding the connected components in the given graph.
 
-        - Apply DFS for the graph and for each unvisited land node, and return the count of DFSs.
-        - Inside the dfs, change the value of the node to sea.
+        - Apply DFS for the graph and for each unvisited land node, and return the number of DFS calls while iterating over the matrix.
+        - Inside the dfs, change the value of the node to sea. (Which is 0)
 
     Time Complexity: O(n*m) n: number of rows, m: number of columns
     Space Complexity: O(n*m) n: number of rows, m: number of columns
