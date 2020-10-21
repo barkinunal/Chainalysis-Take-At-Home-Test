@@ -1,7 +1,7 @@
 # Chainalysis-Take-At-Home-Test
 This repo is created for Chainalysis Take At Home Test
 
-###    Clarifications:
+Clarifications:
         input: int[][] => contains 0,1 => 0: sea 1: land
         output: int => number of islands that are connected with 8-directions.
 
@@ -12,7 +12,7 @@ This repo is created for Chainalysis Take At Home Test
         - There can't be any value other than 0 or 1.
         - Can I modify the input => Yes.
 
-###    Example:
+    Example:
 
         Input : mat[][] = {
                             {1, 1, 0, 0, 0},
@@ -23,7 +23,7 @@ This repo is created for Chainalysis Take At Home Test
                           }
         Output : 5
 
-###    Approach:
+    Approach:
         - The matrix actually represents a graph, values are nodes, there are undirected edges between the nodes at 8-directions
         - What question asks is to finding the connected components in the given graph.
 
